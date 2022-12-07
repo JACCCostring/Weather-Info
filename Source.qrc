@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Source/Files">
+        <file>APIKey.txt</file>
+        <file>countryList.txt</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>icon_start.jpeg</file>
+        <file>icon_2.png</file>
+        <file>icon_stop.jpg</file>
+        <file>icon_show.png</file>
+        <file>icon_send.png</file>
+        <file>icon_connect.jpg</file>
+        <file>icon_stop.ico</file>
+        <file>icon_connect_disconnect.png</file>
+        <file>icon_disconnected.jpeg</file>
+    </qresource>
+</RCC>

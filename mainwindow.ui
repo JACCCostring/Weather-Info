@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1010</width>
+    <height>356</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(24, 23, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="spinBox">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>724</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Country/City</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineCity">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="placeholderText">
+         <string>City here</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>API Key</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineAPIKey">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="checkboxLock">
+          <property name="text">
+           <string>Lock</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="onlineBtn">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">selection-background-color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+border-color: rgb(116, 108, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="Source.qrc">
+          <normaloff>:/icon/icon_connect_disconnect.png</normaloff>:/icon/icon_connect_disconnect.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="3">
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(200, 47, 255);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1020</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">selection-color: rgb(0, 89, 255);
+selection-background-color: rgb(248, 255, 117);</string>
+   </property>
+   <widget class="QMenu" name="menuOperation">
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(0, 89, 255);
+selection-background-color: rgb(248, 255, 117);</string>
+    </property>
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <addaction name="actionStop_Report"/>
+    <addaction name="actionStart_Reports"/>
+    <addaction name="actionSend_Report"/>
+    <addaction name="actionShow_Reports"/>
+   </widget>
+   <addaction name="menuOperation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionStop_Report">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/icon/icon_stop.ico</normaloff>:/icon/icon_stop.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Stop Report</string>
+   </property>
+  </action>
+  <action name="actionStart_Reports">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/icon/icon_start.jpeg</normaloff>:/icon/icon_start.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Start Reports</string>
+   </property>
+  </action>
+  <action name="actionSend_Report">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/icon/icon_send.png</normaloff>:/icon/icon_send.png</iconset>
+   </property>
+   <property name="text">
+    <string>Send Report</string>
+   </property>
+  </action>
+  <action name="actionShow_Reports">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/icon/icon_show.png</normaloff>:/icon/icon_show.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Reports</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
